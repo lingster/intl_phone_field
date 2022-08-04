@@ -3,6 +3,14 @@
 
 const List<Country> countries = [
   Country(
+    name: "United Kingdom",
+    flag: "🇬🇧",
+    code: "GB",
+    dialCode: "44",
+    minLength: 10,
+    maxLength: 10,
+  ),
+  Country(
     name: "Afghanistan",
     flag: "🇦🇫",
     code: "AF",
@@ -1877,14 +1885,6 @@ const List<Country> countries = [
     dialCode: "971",
     minLength: 9,
     maxLength: 9,
-  ),
-  Country(
-    name: "United Kingdom",
-    flag: "🇬🇧",
-    code: "GB",
-    dialCode: "44",
-    minLength: 10,
-    maxLength: 10,
   ),
   Country(
     name: "United States",
