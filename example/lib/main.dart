@@ -62,8 +62,8 @@ class _MyAppState extends State<MyApp> {
                   onChanged: (phone) {
                     print(phone.completeNumber);
                   },
-                  onCountryChanged: (phone) {
-                    print('Country code changed to: ' + phone.countryCode);
+                  onCountryChanged: (country) {
+                    print('Country changed to: ' + country.name);
                   },
                 ),
                 SizedBox(
@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                   color: Theme.of(context).primaryColor,
                   textColor: Colors.white,
                   onPressed: () {
-                    _formKey.currentState.validate();
+                    _formKey.currentState?.validate();
                   },
                 ),
               ],
